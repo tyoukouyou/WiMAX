@@ -1,0 +1,944 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+* html {
+  background-color: #81440e;
+}
+* html body {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  line-height: 1.4;
+  -webkit-text-size-adjust: 100%;
+     -moz-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+          text-size-adjust: 100%;
+}
+* html body body,
+* html body button,
+* html body input,
+* html body select,
+* html body textarea {
+  font-family: "Noto Sans JP", sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+* html body h1,
+* html body h2,
+* html body h3,
+* html body h4,
+* html body h5,
+* html body h6 {
+  font-weight: normal;
+}
+* html body img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: bottom;
+  line-height: 0;
+}
+* html body a {
+  color: #005492;
+}
+* html body table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+html header {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  border-top: 5px solid #204ca0;
+  position: relative;
+}
+html header img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+html header .header-img {
+  content: url(../src/png/mv_pc.png);
+}
+@media screen and (max-width: 899px) {
+  html header .header-img {
+    content: url(../src/png/mv_sp.png);
+  }
+}
+html header p {
+  text-align: center;
+  color: #fff;
+  background: -webkit-gradient(linear, left top, left bottom, from(#113781), to(#204ca0));
+  background: linear-gradient(to bottom, #113781, #204ca0);
+  font-size: 1.25em;
+  padding: 0.25em;
+}
+@media screen and (max-width: 480px) {
+  html header p {
+    font-size: 5vw;
+    padding: 10px 0.5vw;
+  }
+}
+html header p strong {
+  font-size: 1.5em;
+  font-weight: bold;
+  display: inline-block;
+}
+@media screen and (max-width: 899px) {
+  html header p strong {
+    font-size: 1.25em;
+  }
+}
+html header p strong sup {
+  font-weight: normal;
+  font-size: 0.5em;
+  vertical-align: super;
+}
+html header p span {
+  display: inline-block;
+}
+html main {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 0 3em;
+}
+html main .important_notices {
+  text-align: center;
+  width: 96%;
+  margin: 2em auto;
+}
+@media screen and (max-width: 650px) {
+  html main .important_notices {
+    font-size: 2.46vw;
+  }
+}
+@media screen and (max-width: 480px) {
+  html main .important_notices {
+    margin-top: 10vw;
+  }
+}
+html main .important_notices p:first-child {
+  display: inline-block;
+  border: #ff4081 2px solid;
+  border-radius: 0.5em;
+  padding: 1em;
+  margin-bottom: 1em;
+  font-family: "Noto Sans JP", YuGothic, "Yu Gothic medium", "游ゴシック", "Hiragino Sans", Meiryo, "sans-serif";
+  font-weight: 700;
+  color: #ff4081;
+  font-size: 2em;
+  text-align: center;
+  line-height: 1.2;
+}
+html main .important_notices p:first-child span:first-child {
+  display: block;
+}
+html main .important_notices p:first-child span:nth-child(2) {
+  display: inline-block;
+}
+html main .important_notices p:first-child span:nth-child(3) {
+  font-size: 3em;
+  margin: 0 0.1em 0 0.25em;
+}
+html main .important_notices p:first-child span:nth-child(5) {
+  display: block;
+  color: #000;
+  text-align: left;
+  font-size: 0.5em;
+  margin-top: 1em;
+}
+html main .important_notices p:last-child {
+  font-size: 1.2em;
+  font-weight: bold;
+  display: inline-block;
+  text-align: left;
+}
+html main .cont01 {
+  background-color: #f3f9fe;
+  padding: 2em 3em 1.5em;
+}
+@media screen and (max-width: 899px) {
+  html main .cont01 {
+    display: block;
+    padding: 2em 1.5em;
+  }
+  html main .cont01 div,
+  html main .cont01 ul {
+    width: 100%;
+    padding-left: 0;
+  }
+}
+html main .cont01 li {
+  list-style: none;
+  padding-left: 1.5em;
+  position: relative;
+  margin-bottom: 1.5em;
+}
+html main .cont01 li::before {
+  content: "";
+  position: absolute;
+  top: 0.6em;
+  left: 0;
+  display: inline-block;
+  width: 0.6em;
+  height: 0.6em;
+  border-top: #204ca0 3px solid;
+  border-right: #204ca0 3px solid;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+@media screen and (max-width: 600px) {
+  html main .cont01 li::before {
+    content: "";
+    position: absolute;
+    top: 0.6em;
+    left: 0;
+    display: inline-block;
+    width: 0.4em;
+    height: 0.4em;
+    border-top: #204ca0 3px solid;
+    border-right: #204ca0 3px solid;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+}
+html main .cont01 li span {
+  font-size: 1.4em;
+  line-height: 1.4;
+  color: #204ca0;
+  font-weight: bold;
+  display: block;
+}
+@media screen and (max-width: 600px) {
+  html main .cont01 li span {
+    font-size: 1.25em;
+  }
+}
+html main .cont01 li strong {
+  color: #ff4081;
+}
+html main .cont02 {
+  background-color: #eee;
+  padding: 2em 1em 1.5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media screen and (max-width: 899px) {
+  html main .cont02 {
+    display: block;
+  }
+}
+html main .cont02 h2 {
+  background-color: #424242;
+  color: #fff;
+  margin-right: 1em;
+  line-height: 1.2;
+  padding: 0.5em 0.75em;
+  letter-spacing: 0.1em;
+  white-space: nowrap;
+}
+@media screen and (max-width: 899px) {
+  html main .cont02 h2 {
+    margin: 0 0 1em;
+  }
+  html main .cont02 h2 br {
+    display: none;
+  }
+}
+html main .cont02 div {
+  font-size: 0.875em;
+}
+html main .cont02 li {
+  list-style: none;
+  padding-left: 2em;
+  text-indent: -2em;
+}
+html main .cont02 li:last-child {
+  margin-top: 0.5em;
+}
+html main .cont02 span {
+  color: #ff4081;
+  font-weight: bold;
+}
+html main .cont03 {
+  max-width: 800px;
+  margin: 2em auto;
+  padding: 0 1em;
+}
+html main .cont03 h2 {
+  padding: 0.25em;
+  font-size: 1.8em;
+  text-align: center;
+  color: #204ca0;
+  max-width: 650px;
+  border-bottom: 2px solid #204ca0;
+  margin: 0 auto 0.5em;
+}
+@media screen and (max-width: 600px) {
+  html main .cont03 h2 {
+    font-size: 5vw;
+  }
+}
+html main .cont_faq {
+  background-color: #f3f9fe;
+  padding: 2em 1em;
+}
+html main .cont_faq > * {
+  max-width: 800px;
+  margin: 0 auto;
+}
+html main .cont_faq h2 {
+  padding: 0.25em;
+  font-size: 2em;
+  text-align: center;
+  color: #204ca0;
+  max-width: 600px;
+  border-bottom: 2px solid #204ca0;
+  margin: 0 auto 0.5em;
+}
+@media screen and (max-width: 600px) {
+  html main .cont_faq h2 {
+    font-size: 5vw;
+  }
+}
+html main .cont_faq h3 {
+  font-size: 1.25em;
+  border-bottom: #204ca0 1px solid;
+  color: #204ca0;
+  position: relative;
+  padding: 0.5em 2em 0.5em 0.5em;
+  cursor: pointer;
+  margin-top: 1.5em;
+  font-weight: 300;
+}
+html main .cont_faq h3::after {
+  content: "+";
+  display: block;
+  position: absolute;
+  font-size: 1.5em;
+  font-weight: bold;
+  top: 0;
+  right: 1em;
+}
+html main .cont_faq h3.faq_open::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 0.5em;
+  background-color: #204ca0;
+  top: 0.5em;
+}
+html main .cont_faq h3 + div {
+  display: none;
+  margin-top: 0.5em;
+}
+html main .cont_faq h4 {
+  color: #204ca0;
+  position: relative;
+  padding: 0.5em 2em;
+  cursor: pointer;
+  font-weight: 300;
+}
+html main .cont_faq h4:hover {
+  text-decoration: underline;
+}
+html main .cont_faq h4::before {
+  content: "Q";
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-right: 0.5em;
+}
+html main .cont_faq h4 + p {
+  display: none;
+  background-color: #fff;
+  padding: 0.75em 0.5em 0.5em 2.5em;
+  position: relative;
+  margin-bottom: 1.5em;
+}
+html main .cont_faq h4 + p::before {
+  content: "A";
+  position: absolute;
+  top: 0.25em;
+  left: 0.5em;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #ff4081;
+}
+html main .cont_faq > p {
+  margin-top: 3em;
+}
+html main .cont04 {
+  background-color: #eee;
+  padding: 2em 1em;
+}
+html main .cont04 h2 {
+  padding: 0.25em;
+  font-size: 2em;
+  text-align: center;
+  color: #204ca0;
+  max-width: 600px;
+  border-bottom: 2px solid #204ca0;
+  margin: 0 auto 0.5em;
+}
+@media screen and (max-width: 600px) {
+  html main .cont04 h2 {
+    font-size: 5vw;
+  }
+}
+html main .cont04 h2 + p {
+  text-align: center;
+  margin-bottom: 3em;
+}
+@media screen and (max-width: 600px) {
+  html main .cont04 h2 + p {
+    font-size: 0.875em;
+  }
+}
+html main .cont04 h3 {
+  text-align: center;
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 1em;
+  color: #444;
+}
+@media screen and (max-width: 480px) {
+  html main .cont04 h3 {
+    font-size: 1.5em;
+  }
+}
+html main .cont04 .product_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+@media screen and (max-width: 899px) {
+  html main .cont04 .product_container {
+    display: block;
+  }
+}
+html main .cont04 .product_detail {
+  width: calc(50% - 2em);
+  padding: 1.5em 1.5em 7em;
+  margin: 0 1em;
+  position: relative;
+  background-color: #fff;
+}
+@media screen and (max-width: 899px) {
+  html main .cont04 .product_detail {
+    width: calc(100% - 2em);
+    margin: 0 1em 2em;
+  }
+}
+html main .cont04 .product_detail > p {
+  text-align: center;
+  position: absolute;
+  bottom: 2em;
+  left: 0;
+  width: 100%;
+}
+html main .cont04 .product_detail > p label {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #fff;
+  background-color: #0084FF;
+  padding: 0.5em;
+  border-radius: 1.2em;
+  width: 12em;
+  max-width: 96%;
+  cursor: pointer;
+}
+html main .cont04 .product_detail > p label:hover {
+  opacity: 0.8;
+}
+html main .cont04 .product_detail > p input {
+  margin-right: 1em;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  width: 1em;
+  height: 1em;
+  background-color: #fff;
+  border-radius: 50%;
+  display: inline-block;
+}
+html main .cont04 .product_detail > p input:checked::after {
+  content: "";
+  display: block;
+  width: 1em;
+  height: 1em;
+  border: #fff 4px solid;
+  background-color: #ff4081;
+  border-radius: 50%;
+  position: relative;
+  margin: -0.2em 0 0 -0.2em;
+}
+html main .cont04 .column2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+@media screen and (max-width: 899px) {
+  html main .cont04 .column2 {
+    display: block;
+    text-align: center;
+  }
+  html main .cont04 .column2 td {
+    text-align: left;
+  }
+  html main .cont04 .column2 p::after {
+    content: "";
+    display: block;
+    width: 0.5em;
+    height: 0.5em;
+    border-bottom: #fff 2px solid;
+    border-right: #fff 2px solid;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+    -webkit-transition: -webkit-transform 0.5s;
+    transition: -webkit-transform 0.5s;
+    transition: transform 0.5s;
+    transition: transform 0.5s, -webkit-transform 0.5s;
+    position: absolute;
+    top: 0.75em;
+    right: 1em;
+  }
+  html main .cont04 .column2 p.open::after {
+    -webkit-transform: rotate(225deg);
+            transform: rotate(225deg);
+    -webkit-transition: -webkit-transform 0.5s;
+    transition: -webkit-transform 0.5s;
+    transition: transform 0.5s;
+    transition: transform 0.5s, -webkit-transform 0.5s;
+    top: 1em;
+  }
+}
+html main .cont04 .column2 > div p {
+  border: #ff4081 5px solid;
+  border-radius: 1em;
+  margin: 2em 0 0;
+  text-align: center;
+  padding: 0.5em 0.25em;
+}
+@media screen and (max-width: 1200px) {
+  html main .cont04 .column2 > div p {
+    font-size: 1.33vw;
+  }
+}
+html main .cont04 .column2 > div > p > span {
+  display: block;
+  font-weight: bold;
+}
+html main .cont04 .column2 > div > p > span:nth-of-type(1) {
+  color: #ff4081;
+}
+html main .cont04 .column2 > div > p > span:nth-of-type(2) {
+  color: #ff4081;
+  font-size: 1.3em;
+}
+html main .cont04 .column2 > div > p > span:nth-of-type(3) {
+  font-size: 0.75em;
+  font-weight: normal;
+}
+html main .cont04 .column2 table {
+  width: 62%;
+}
+@media screen and (max-width: 899px) {
+  html main .cont04 .column2 table {
+    display: none;
+    width: auto;
+    margin: 0 auto;
+  }
+}
+html main .cont04 .column2 table th {
+  background-color: #204ca0;
+  color: #fff;
+  font-weight: normal;
+  width: 40%;
+}
+html main .cont04 .column2 table ul {
+  margin-left: 1.5em;
+}
+html main .cont04 .column2 > p {
+  display: none;
+}
+@media screen and (max-width: 899px) {
+  html main .cont04 .column2 > p {
+    display: block;
+    font-size: 1.125em;
+    color: #fff;
+    background-color: #204ca0;
+    text-align: center;
+    padding: 0.5em;
+    cursor: pointer;
+    position: relative;
+    max-width: 300px;
+    margin: 1em auto;
+  }
+}
+html main .cont04 .column2 > img {
+  width: 35%;
+}
+@media screen and (max-width: 899px) {
+  html main .cont04 .column2 > img {
+    width: auto;
+  }
+}
+html main .cont04 .column2 > div {
+  width: 35%;
+}
+@media screen and (max-width: 899px) {
+  html main .cont04 .column2 > div {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  html main .cont04 .column2 > div > * {
+    margin: 0 1em !important;
+    font-size: 1.8vw !important;
+    max-width: calc(50% - 2em);
+  }
+}
+html main .cont04 .column2 > table td {
+  padding: 0.25em 0.5em;
+  border: #ddd 1px solid;
+  font-size: 0.8125em;
+  background-color: #fff;
+  word-break: break-all;
+}
+html main .cont04 .column2 > table th {
+  padding: 0.25em 0.5em;
+  border: #ddd 1px solid;
+  font-size: 0.8125em;
+  background-color: #204ca0;
+  word-break: break-all;
+}
+@media screen and (max-width: 480px) {
+  html main .cont04 .column2 p {
+    font-size: 1em;
+  }
+}
+html main .cont05 {
+  padding: 2em;
+  text-align: center;
+  display: none;
+}
+@media screen and (max-width: 899px) {
+  html main .cont05 {
+    padding: 2em 1.5em;
+  }
+}
+html main .cont05 h2 {
+  padding: 0.25em;
+  font-size: 2em;
+  text-align: center;
+  color: #204ca0;
+  max-width: 600px;
+  border-bottom: 2px solid #204ca0;
+  margin: 0 auto 1.5em;
+}
+@media screen and (max-width: 600px) {
+  html main .cont05 h2 {
+    font-size: 5vw;
+  }
+}
+html main .cont05 p {
+  margin: 0 0 1em;
+}
+@media screen and (max-width: 480px) {
+  html main .cont05 p {
+    font-size: 0.875em;
+  }
+}
+@media screen and (max-width: 600px) {
+  html main .cont05 p br {
+    display: inline;
+  }
+}
+html main .daigaku_select p.dlst_select {
+  position: relative;
+  margin: 0 auto;
+}
+html main .daigaku_select p.dlst_select::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 0.5em;
+  width: 0;
+  height: 0;
+  border-top: #888 5px solid;
+  border-left: transparent 4px solid;
+  border-right: transparent 4px solid;
+}
+html main .daigaku_select p br {
+  display: none;
+}
+html main .daigaku_select #daigakuList {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  width: 100%;
+  border: #aaa 1px solid;
+  border-radius: 4px;
+  padding: 5px 20px 5px 8px;
+  font-size: 100%;
+}
+html main .daigaku_select #daigakuList:focus {
+  outline: 0;
+  border: #aaa 1px solid;
+}
+html main .gakunen_select p.glst_select {
+  position: relative;
+  margin: 0 auto;
+}
+html main .gakunen_select p.glst_select::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 0.5em;
+  width: 0;
+  height: 0;
+  border-top: #888 5px solid;
+  border-left: transparent 4px solid;
+  border-right: transparent 4px solid;
+}
+html main .gakunen_select #gakunenList {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  width: 100%;
+  border: #aaa 1px solid;
+  border-radius: 4px;
+  padding: 5px 20px 5px 8px;
+  font-size: 100%;
+}
+html main .gakunen_select #gakunenList:focus {
+  outline: 0;
+  border: #aaa 1px solid;
+}
+html main .daigaku_select p.dlst_select,
+html main .gakunen_select p.glst_select {
+  width: 600px !important;
+  max-width: 100%;
+  font-size: 1.125em;
+  text-align: left;
+}
+html main .cont06 {
+  background-color: #f3f9fe;
+  padding: 2em;
+  display: none;
+}
+html main .cont06 .delivery {
+  border-bottom: #ddd 1px solid;
+}
+@media screen and (max-width: 480px) {
+  html main .cont06 .delivery {
+    font-size: 0.875em;
+  }
+}
+html main .cont06 .delivery p {
+  margin: 0 0 0.5em;
+}
+html main .cont06 .delivery li {
+  list-style: none;
+  padding-left: 1.5em;
+  text-indent: -1.5em;
+  margin: 0 0 0.5em;
+}
+html main .cont06 .delivery .delivery_date {
+  text-align: center;
+}
+html main .cont06 .delivery .delivery_date input {
+  font-size: 1.126em;
+  padding: 0.5em;
+  max-width: 100%;
+}
+html main .cont06 .delivery .post-day {
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 4vw;
+  font-size: 1.125em;
+  font-weight: normal;
+  max-width: 100%;
+}
+html main .cont06 .delivery .post-day input {
+  height: 4vw;
+  width: auto;
+}
+html main .cont06 h2 {
+  padding: 0.25em;
+  font-size: 2em;
+  text-align: center;
+  color: #204ca0;
+  max-width: 600px;
+  border-bottom: 2px solid #204ca0;
+  margin: 0 auto 1.5em;
+}
+@media screen and (max-width: 600px) {
+  html main .cont06 h2 {
+    font-size: 5vw;
+  }
+}
+html main .cont06 .confirm a {
+  text-decoration: none;
+}
+@media screen and (max-width: 480px) {
+  html main .cont06 .confirm {
+    font-size: 0.875em;
+  }
+}
+html main .cont06 .confirm table {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+html main .cont06 .confirm th {
+  background-color: #eee;
+  font-weight: normal;
+}
+html main .cont06 .confirm td {
+  background-color: #fff;
+}
+html main .cont06 .confirm td input {
+  width: 100%;
+  padding: 0.5em;
+  max-width: 100%;
+}
+html main .cont06 .confirm p {
+  text-align: center;
+  padding: 1.5em 0 0;
+}
+html main .cont06 .confirm p input {
+  font-size: 1.125em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 12em;
+  height: 3em;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  font-weight: bold;
+  color: #fff;
+  background-color: #0084FF;
+  padding: 0.5em;
+  border-radius: 1.5em;
+  border: none;
+}
+html main .cont06 .confirm p input:hover {
+  opacity: 0.8;
+}
+html main .cont06 .delivery, html main .cont06 .confirm {
+  width: 900px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 1.5em 0;
+}
+html main .cont06 .delivery th,
+html main .cont06 .delivery td, html main .cont06 .confirm th,
+html main .cont06 .confirm td {
+  padding: 0.5em;
+  border: #ddd 1px solid;
+}
+html footer {
+  background-color: #eee;
+  padding: 3em 0;
+  text-align: center;
+  line-height: 1.7;
+}
+@media screen and (max-width: 600px) {
+  html footer {
+    padding: 3em 1em;
+    text-align: left;
+  }
+  html footer ul {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
+html footer span {
+  font-size: 0.875em;
+}
+html footer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 1em auto;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+html footer ul li {
+  margin: 0 1em 0 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+html footer ul li:last-child {
+  margin: 0;
+}
+html footer ul li::before {
+  content: "";
+  display: inline-block;
+  width: 1px;
+  height: 1em;
+  background-color: #000;
+  margin-right: 1em;
+}
+html footer ul li:first-child::before {
+  display: none;
+}/*# sourceMappingURL=style.css.map */

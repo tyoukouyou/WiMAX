@@ -1,0 +1,57 @@
+// init 
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    box-sizing: border-box;
+    html {
+        background-color: #81440e;
+    
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+            line-height: 1.4;
+            text-size-adjust: 100%;
+    
+        body,
+        button,
+        input,
+        select,
+        textarea {
+            font-family: "Noto Sans JP", sans-serif;
+            box-sizing: border-box;
+        }
+    
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-weight: normal;
+        }
+    
+        img {
+            max-width: 100%;
+            height: auto;
+            vertical-align: bottom;
+            line-height: 0;
+        }
+    
+        a {
+            color: #005492;
+        }
+    
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+    
+    
+    }
+    
+    }
+}

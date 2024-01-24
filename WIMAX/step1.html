@@ -1,0 +1,73 @@
+<div class="policy">
+    <div class="agreement">
+
+        <p class="text">記載の重要事項説明を最後までお読みになり、同意いただける場合は 「同意する」 をご選択ください。<br>
+            ご不明な点がある場合は弊社コールセンター（0120-952-091）までお問合せください。</p>
+        <h3>重要事項説明、約款</h3>
+        <div class="ifm-container">
+
+            <iframe id="policy01" class="ifm01" scrolling="auto" width="100%" height="100%" align="top"
+                src="./policy/policy01.html"></iframe>
+
+        </div>
+
+
+        <div class="notice clearfix">
+            <input id="custKbn" type="hidden" value="2">
+            <input name="important_agreement" id="important_agreement_disagree" type="radio" value="disagree"
+                checked="checked">
+            <label for="important_agreement_disagree">同意しない</label>
+            <input name="important_agreement" id="important_agreement_agree" type="radio" value="agree">
+            <label for="important_agreement_agree">同意する</label>
+            <span class="error-notice" id="error-01">「同意する」が選択されておりません。</span>
+        </div>
+
+
+
+        <hr>
+        <p class="text">記載の確認事項9項目をお読みになり、同意いただける項目すべてをチェックしてください。<br>
+            ご不明な点がある場合は弊社コールセンター（0120-952-091）までお問合せください。</p>
+        <h3>DIS mobile WiMAX 確認事項</h3>
+        <div class="ifm-container">
+
+            <iframe id="policy-02" class="ifm02" src="./policy/policy02.html"></iframe>
+
+        </div>
+        <div class="notice clearfix pa30">
+            <input name="service_agreement_check" id="service_agreement_check01" type="checkbox" value="1">
+            <label for="service_agreement_check01">1.インターネット回線契約とサービスエリアについて</label>
+            <input name="service_agreement_check" id="service_agreement_check02" type="checkbox" value="1">
+            <label for="service_agreement_check02">2.インターネット契約回線時に必要なもの</label>
+            <input name="service_agreement_check" id="service_agreement_check03" type="checkbox" value="1">
+            <label for="service_agreement_check03">3.機器配送と契約開始日と利用開始日について</label>
+            <input name="service_agreement_check" id="service_agreement_check04" type="checkbox" value="1">
+            <label for="service_agreement_check04">4.親権者について</label>
+            <input name="service_agreement_check" id="service_agreement_check05" type="checkbox" value="1">
+            <label for="service_agreement_check05">5.料金プランについて</label>
+            <input name="service_agreement_check" id="service_agreement_check06" type="checkbox" value="1">
+            <label for="service_agreement_check06">6.通信速度と通信量の制限について</label>
+            <input name="service_agreement_check" id="service_agreement_check07" type="checkbox" value="1">
+            <label for="service_agreement_check07">7.ご利用料金のお支払いについて</label>
+            <input name="service_agreement_check" id="service_agreement_check08" type="checkbox" value="1">
+            <label for="service_agreement_check08">8.キャンセル・返品について</label>
+            <input name="service_agreement_check" id="service_agreement_check09" type="checkbox" value="1">
+            <label for="service_agreement_check09">9.解約・初期不良・故障・その他お問い合わせ先について</label>
+
+
+            <div class="centre"><input class="allCheck" id="button_allCheck" type="button" value="全てに同意する"
+                    onclick="toggleCheckboxes('service_agreement_check')">
+            </div>
+
+            <span class="error-notice" id="error-02">チェックされていない項目があります。すべての項目をチェックしてください。</span>
+
+        </div>
+
+        <hr>
+
+    </div>
+</div>
+
+<div class="next_step" class="centre">
+    <input class="nextstep" name="button_confirm" id="step2_next_btn" type="button" value="次のSTEP2（情報入力）へ
+    ※ステップ4で申込完了します。">
+</div>

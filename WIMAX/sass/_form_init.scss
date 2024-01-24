@@ -1,0 +1,55 @@
+html {
+	font-family: "Noto Sans JP", sans-serif;
+	font-size: 62.5%;
+
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box !important;
+	}
+
+	body {
+		background: #FFF;
+
+		.images {
+			width: 100%;
+			height: auto;
+		}
+
+		.clearfix:after {
+			content: "";
+			clear: both;
+			display: block;
+		}
+
+		.pa20 {
+			padding: 20px;
+			box-sizing: border-box;
+		}
+
+		.pa30 {
+			padding: 30px;
+			box-sizing: border-box;
+		}
+
+		.mt20 {
+			margin-top: 20px;
+		}
+
+		.centre {
+			width: 100%;
+			text-align: center;
+		}
+
+		.error-notice{
+			width: 40vw;
+			display: block;
+			color: red;
+			font-size: 1.8em;
+			font-weight: bold;
+			text-align: center;
+			margin: 0 auto;
+			display: none;
+		}
+	}
+}

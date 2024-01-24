@@ -1,0 +1,489 @@
+@charset "UTF-8";
+html {
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 62.5%;
+}
+html * {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box !important;
+          box-sizing: border-box !important;
+}
+html body {
+  background: #FFF;
+}
+html body .images {
+  width: 100%;
+  height: auto;
+}
+html body .clearfix:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+html body .pa20 {
+  padding: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+html body .pa30 {
+  padding: 30px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+html body .mt20 {
+  margin-top: 20px;
+}
+html body .centre {
+  width: 100%;
+  text-align: center;
+}
+html body .error-notice {
+  width: 40vw;
+  display: block;
+  color: red;
+  font-size: 1.8em;
+  font-weight: bold;
+  text-align: center;
+  margin: 0 auto;
+  display: none;
+}
+
+h2 {
+  width: 100%;
+  font-size: 3.5em;
+  line-height: 1em;
+  color: #004EA2;
+  font-weight: bold;
+  margin: 0;
+  padding: 20px 0;
+  text-align: center;
+  overflow: hidden;
+}
+
+.text {
+  margin: 0;
+  padding: 10px;
+  font-size: 1.5rem;
+  line-height: 1.5em;
+}
+
+header {
+  margin-bottom: 0;
+}
+header h1 {
+  width: 100%;
+  height: 120px;
+  margin: 0;
+  padding: 20px 0;
+  border-top: 5px solid #004EA2;
+  border-bottom: 1px solid #999;
+  overflow: hidden;
+  text-align: center;
+}
+header h1 img {
+  height: 100%;
+  width: auto;
+}
+header .cont {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+header .step-container {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+header .step-container .step {
+  width: 100%;
+  border-bottom: 1px solid #CCC;
+  background-color: #FAFAFA;
+  margin-bottom: 5rem;
+}
+header .step-container .step .cont {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  border-right: 1px solid #CCC;
+  background-color: white;
+}
+header .step-container .step .cont dl {
+  display: block;
+  float: left;
+  width: 25%;
+  padding: 0;
+  background-image: url("../src/png/next_dl.png");
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: left top;
+}
+header .step-container .step .cont dl.active {
+  background-color: #004EA2;
+  color: white;
+  background-image: none;
+}
+header .step-container .step .cont dl.active dt {
+  padding: 7px 10px 7px 10px;
+  color: white;
+}
+header .step-container .step .cont dl.active dd {
+  padding: 0 10px 7px 10px;
+}
+header .step-container .step .cont dl.next {
+  background-color: white;
+  background-image: url("../src/png/next_arrow.png");
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: left top;
+  border-left: 1px solid #004EA2;
+}
+header .step-container .step .cont dt {
+  width: 100%;
+  font-weight: bold;
+  font-family: "Segoe UI";
+  text-align: center;
+  padding: 7px 10px 7px 47px;
+  font-size: 1.8rem;
+  line-height: 1em;
+  color: #004EA2;
+}
+header .step-container .step .cont dd {
+  width: 100%;
+  font-family: "Segoe UI";
+  text-align: center;
+  padding: 0 10px 7px 47px;
+  font-size: 1.3rem;
+  line-height: 1em;
+}
+
+main .container {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+main .container .policy .agreement h3 {
+  width: 100%;
+  border: 1px solid #004EA2;
+  background-color: #004EA2;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  border-radius: 5px 5px 0 0;
+  border-bottom: none;
+  font-weight: normal;
+  font-size: 2.2em;
+  line-height: 1em;
+}
+main .container .policy .agreement hr {
+  width: 100%;
+  height: 0;
+  border-top: 1px solid #CCC;
+  border-bottom: none;
+  margin: 4rem 0;
+}
+main .container .policy .agreement .ifm-container {
+  width: 100%;
+  height: 400px;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
+main .container .policy .agreement .ifm01 {
+  width: 100%;
+  text-align: center;
+  padding: 15px;
+  height: 360px;
+  border: 1px solid #004EA2;
+  border-radius: 0 0 5px 5px;
+  border-top: none;
+}
+main .container .policy .agreement .ifm01 iframe {
+  border: none;
+  overflow-y: scroll;
+  width: 100%;
+  height: 100%;
+}
+main .container .policy .agreement .ifm02 {
+  width: 100%;
+  text-align: center;
+  padding: 15px;
+  height: 360px;
+  border: 1px solid #004EA2;
+  border-radius: 0 0 5px 5px;
+  border-top: none;
+}
+main .container .policy .agreement .ifm02 iframe {
+  border: none;
+  overflow-y: scroll;
+  width: 100%;
+  height: 100%;
+}
+main .container .policy .agreement .notice {
+  width: 100%;
+  border: 3px solid #004EA2;
+  border-radius: 5px;
+  padding: 15px;
+  margin: 20px 0;
+}
+main .container .policy .agreement .notice .error-notice {
+  width: 60vw;
+}
+main .container .policy .agreement .notice p {
+  text-align: center;
+  font-size: 1.8em;
+  margin: 0;
+  padding-right: 100px;
+  padding-left: 100px;
+  font-family: Meiryo, "メイリオ";
+}
+main .container .policy .agreement .notice input[type=radio] {
+  display: none;
+}
+main .container .policy .agreement .notice input[type=radio] + label {
+  display: block;
+  width: 35%;
+  height: 3em;
+  border-radius: 1.5em;
+  background-color: #F0F0F0;
+  margin: 16px 0 15px 10%;
+  line-height: 3em;
+  text-align: center;
+  font-size: 2.1rem;
+  font-weight: normal;
+  float: left;
+  font-family: Meiryo, "メイリオ";
+  position: relative;
+}
+main .container .policy .agreement .notice input[type=radio] + label::before {
+  display: block;
+  content: "";
+  width: 3rem;
+  height: 3rem;
+  border: 1px solid #CCC;
+  top: 1.5rem;
+  left: 1.5rem;
+  border-radius: 50%;
+  float: left;
+  position: absolute;
+  background-color: white;
+}
+main .container .policy .agreement .notice input[type=radio]:checked + label {
+  border: 3px solid #004EA2 !important;
+  color: #004EA2 !important;
+  font-weight: bold;
+  position: relative;
+  background-color: white;
+  line-height: 2.9em;
+}
+main .container .policy .agreement .notice input[type=radio]:checked + label::before {
+  display: block;
+  content: "";
+  width: 3rem;
+  height: 3rem;
+  border: none;
+  border-radius: 50%;
+  top: 1.4rem;
+  left: 1.5rem;
+  background-color: #004EA2;
+  position: absolute;
+}
+main .container .policy .agreement .notice dl {
+  margin: 0;
+  padding: 0;
+}
+main .container .policy .agreement .notice input[type=checkbox] {
+  display: none;
+}
+main .container .policy .agreement .notice input[type=checkbox] + label {
+  display: block;
+  font-size: 1.75rem;
+  line-height: 1em;
+  margin-bottom: 5px;
+  background-color: white;
+  padding: 10px;
+}
+main .container .policy .agreement .notice input[type=checkbox] + label:hover {
+  background-color: #004EA2;
+  color: white;
+}
+main .container .policy .agreement .notice input[type=checkbox] + label::before {
+  content: "";
+  width: 2rem;
+  height: 2rem;
+  border: 2px solid #004EA2;
+  background-color: white;
+  border-radius: 4px;
+  display: block;
+  float: left;
+  margin-right: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: black;
+  padding-top: 7px;
+}
+main .container .policy .agreement .notice input[type=checkbox]:checked + label::before {
+  content: "✔";
+  text-align: left;
+  font-weight: bold;
+  padding-top: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+main .container .policy .agreement .allCheck {
+  margin: 2rem auto;
+  border-radius: 5px;
+  padding: 1.8rem 5rem;
+  background-color: white;
+  border: 2px solid #004EA2;
+  font-size: 1.7rem;
+  font-weight: bold;
+}
+main .container .policy .agreement .allCheck:hover {
+  border: 2px solid #004EA2;
+  background-color: #004EA2;
+  color: white;
+}
+main .container .policy .agreement .formarea {
+  width: 100%;
+  text-align: left;
+  padding: 15px;
+  border: 1px solid #004EA2;
+  border-radius: 0 0 5px 5px;
+  border-top: none;
+}
+main .container .policy .agreement .formarea h4 {
+  font-size: 1.9em;
+  font-weight: bold;
+  margin: 10px 0 0 0;
+  text-align: left;
+  padding-left: 5px;
+}
+main .container .policy .agreement .formarea .comment {
+  margin: 0;
+  padding: 5px;
+  background-color: #FFFDE7;
+  text-align: left;
+  font-size: 1.5rem;
+  border: 1px solid #CCC;
+  border-radius: 5px;
+}
+main .container .policy .agreement .formarea .sub {
+  margin-top: 5px;
+  font-size: 1.3rem;
+  text-align: left;
+  line-height: 1em;
+  color: #333;
+}
+main .container .policy .agreement .formarea .step2-table {
+  width: 100% !important;
+  border-collapse: collapse;
+  font-size: 1.5em;
+  -webkit-box-sizing: border-box !important;
+          box-sizing: border-box !important;
+}
+main .container .policy .agreement .formarea .step2-table th,
+main .container .policy .agreement .formarea .step2-table td {
+  border: 1px solid #CCC;
+}
+main .container .policy .agreement .formarea .step2-table th {
+  font-weight: normal;
+  vertical-align: middle;
+  background-color: #E0F7FA;
+  padding: 15px;
+  width: 25%;
+}
+main .container .policy .agreement .formarea .step2-table td {
+  padding: 15px;
+}
+main .container .policy .agreement .formarea .step2-table input,
+main .container .policy .agreement .formarea .step2-table select {
+  border: 1px solid #CCC;
+  border-radius: 6px;
+  padding: 10px;
+  font-size: 1.6rem;
+}
+main .container .policy .agreement .formarea .step2-table input:hover,
+main .container .policy .agreement .formarea .step2-table input:focus,
+main .container .policy .agreement .formarea .step2-table select:hover {
+  background-color: #FFFDE7;
+}
+main .container .policy .agreement .formarea .step2-table .zipCode1,
+main .container .policy .agreement .formarea .step2-table .bldstZipCode1 {
+  width: 3em;
+}
+main .container .policy .agreement .formarea .step2-table .zipCode2,
+main .container .policy .agreement .formarea .step2-table .bldstZipCode2 {
+  width: 4em;
+}
+main .container .policy .agreement .formarea .step2-table input[type=email] {
+  width: 100%;
+}
+main .container .policy .agreement .formarea .step2-table .mb05 {
+  margin-bottom: 5px;
+}
+main .container .policy .agreement .formarea .step2-table .mb10 {
+  margin-bottom: 10px;
+}
+main .container .policy .agreement .formarea .step2-table .mb50 {
+  margin-bottom: 50px;
+}
+main .container .policy .agreement .formarea .step2-table input[type=file] {
+  width: 100%;
+}
+main .container .policy .agreement .formarea .step2-table .sp700,
+main .container .policy .agreement .formarea .step2-table .sp700txt {
+  display: none;
+}
+main .container .policy .agreement .formarea .uploaddeny {
+  margin: 0;
+  padding: 15px;
+  background-color: #FFFDE7;
+  text-align: left;
+  font-size: 1.5em;
+  border: 1px solid #CCC;
+  border-radius: 5px;
+}
+main .container .next_step .nextstep {
+  margin: 2rem auto;
+  border-radius: 5px;
+  padding: 2.5rem 5rem;
+  background-color: white;
+  border: 3px solid #004EA2;
+  font-size: 2em;
+  color: #004EA2;
+  font-weight: bold;
+  width: 68%;
+  -webkit-box-sizing: border-box !important;
+          box-sizing: border-box !important;
+}
+main .container .next_step .nextstep:hover {
+  background-color: #004EA2;
+  color: white;
+}
+main .container .next_step #step2_next_btn {
+  width: 65%;
+  float: right;
+}
+main .container .next_step #step1_back_btn {
+  width: 30%;
+  float: left;
+}
+main .container .next_step #step3_next_btn {
+  width: 65%;
+  float: right;
+}
+
+footer {
+  clear: both;
+  position: static;
+  bottom: 0;
+  left: 0;
+  background-color: #004EA2;
+  color: white;
+  font-size: 1.4rem;
+  font-weight: normal;
+  line-height: 3em;
+  height: 3em;
+  text-align: center;
+  vertical-align: middle;
+}/*# sourceMappingURL=form.css.map */

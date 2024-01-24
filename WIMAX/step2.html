@@ -1,0 +1,536 @@
+<div class="policy">
+    <div class="agreement">
+        <h3>ご契約者の情報を入力して下さい。　　※学生様名義にてお願いします。</h3>
+        <div class="formarea">
+            <p class="comment" style="color:red"><strong><big>本人確認書類①　と同じ情報（お名前）で登録してください。
+                        WiMAX+5G一式をお届けする住所を登録してください。<br>
+                        【お願い】 郵便番号、住所などご入力いただく内容は正しく入れていただくようお願いいたします。<br>
+                        不備がある場合、出荷希望日にお応え出来ませんのでご注意ください。
+
+                    </big></strong></p>
+            <table class="step2-table">
+                <tbody>
+                    <tr>
+                        <th>
+                            <label for="custNameLast">お名前</label>
+                        </th>
+                        <td>
+                            <p class="sp700">お名前</p>
+                            <input tabindex="1" id="custNameLast" type="text" required="" class="in-data" maxlength="30"
+                                style="ime-mode: active" placeholder="姓">
+                            <input tabindex="2" id="custNameFirst" type="text" required="" class="in-data"
+                                maxlength="30" style="ime-mode: active" placeholder="名">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            <label for="custNameLastKana">フリガナ</label>
+                        </th>
+                        <td>
+                            <p class="sp700">フリガナ</p>
+                            <input tabindex="3" id="custNameLastKana" type="text" maxlength="30" placeholder="セイ"
+                                required="" class="in-data" style="ime-mode: active">
+                            <input tabindex="4" id="custNameFirstKana" type="text" maxlength="30" placeholder="メイ"
+                                required="" class="in-data" style="ime-mode: active">
+                            <p class="comment sub">全角カタカナでご記入下さい</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            <label for="birth">生年月日</label>
+                        </th>
+                        <td>
+                            <p class="sp700">生年月日</p>
+                            <input tabindex="5" id="birth" type="text" maxlength="10" placeholder="記入例：1999/04/01"
+                                required="" class="in-data" style="ime-mode: inactive">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            <label for="zipCode1">郵便番号</label>
+                        </th>
+                        <td>
+                            <p class="sp700">郵便番号</p>
+                            <input tabindex="6" class="zipCode1" type="text" maxlength="3" placeholder="000" required=""
+                                class="in-data" style="ime-mode: inactive" name="zipCode1"> -
+                            <input tabindex="7" class="zipCode2" type="text" maxlength="4" placeholder="0000" required=""
+                                class="in-data" style="ime-mode: inactive">
+                            <p class="comment sub">郵便番号がご不明な場合は
+                                <a href="http://www.post.japanpost.jp/zipcode/" target="_blank">こちら</a>でご確認下さい
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            <label for="tdfk">都道府県</label>
+                        </th>
+                        <td>
+                            <p class="sp700">都道府県名</p>
+                            <select tabindex="8" id="tdfk" required="" class="in-data">
+                                <option value="" selected="">リストより選択して下さい。</option>
+                                <option value="北海道">北海道</option>
+                                <option value="青森県">青森県</option>
+                                <option value="岩手県">岩手県</option>
+                                <option value="宮城県">宮城県</option>
+                                <option value="秋田県">秋田県</option>
+                                <option value="山形県">山形県</option>
+                                <option value="福島県">福島県</option>
+                                <option value="茨城県">茨城県</option>
+                                <option value="栃木県">栃木県</option>
+                                <option value="群馬県">群馬県</option>
+                                <option value="埼玉県">埼玉県</option>
+                                <option value="千葉県">千葉県</option>
+                                <option value="東京都">東京都</option>
+                                <option value="神奈川県">神奈川県</option>
+                                <option value="新潟県">新潟県</option>
+                                <option value="富山県">富山県</option>
+                                <option value="石川県">石川県</option>
+                                <option value="福井県">福井県</option>
+                                <option value="山梨県">山梨県</option>
+                                <option value="長野県">長野県</option>
+                                <option value="岐阜県">岐阜県</option>
+                                <option value="静岡県">静岡県</option>
+                                <option value="愛知県">愛知県</option>
+                                <option value="三重県">三重県</option>
+                                <option value="滋賀県">滋賀県</option>
+                                <option value="京都府">京都府</option>
+                                <option value="大阪府">大阪府</option>
+                                <option value="兵庫県">兵庫県</option>
+                                <option value="奈良県">奈良県</option>
+                                <option value="和歌山県">和歌山県</option>
+                                <option value="鳥取県">鳥取県</option>
+                                <option value="島根県">島根県</option>
+                                <option value="岡山県">岡山県</option>
+                                <option value="広島県">広島県</option>
+                                <option value="山口県">山口県</option>
+                                <option value="徳島県">徳島県</option>
+                                <option value="香川県">香川県</option>
+                                <option value="愛媛県">愛媛県</option>
+                                <option value="高知県">高知県</option>
+                                <option value="福岡県">福岡県</option>
+                                <option value="佐賀県">佐賀県</option>
+                                <option value="長崎県">長崎県</option>
+                                <option value="熊本県">熊本県</option>
+                                <option value="大分県">大分県</option>
+                                <option value="宮崎県">宮崎県</option>
+                                <option value="鹿児島県">鹿児島県</option>
+                                <option value="沖縄県">沖縄県</option>
+                                <option value="北海道">北海道</option>
+                                <option value="青森県">青森県</option>
+                                <option value="岩手県">岩手県</option>
+                                <option value="宮城県">宮城県</option>
+                                <option value="秋田県">秋田県</option>
+                                <option value="山形県">山形県</option>
+                                <option value="福島県">福島県</option>
+                                <option value="茨城県">茨城県</option>
+                                <option value="栃木県">栃木県</option>
+                                <option value="群馬県">群馬県</option>
+                                <option value="埼玉県">埼玉県</option>
+                                <option value="千葉県">千葉県</option>
+                                <option value="東京都">東京都</option>
+                                <option value="神奈川県">神奈川県</option>
+                                <option value="新潟県">新潟県</option>
+                                <option value="富山県">富山県</option>
+                                <option value="石川県">石川県</option>
+                                <option value="福井県">福井県</option>
+                                <option value="山梨県">山梨県</option>
+                                <option value="長野県">長野県</option>
+                                <option value="岐阜県">岐阜県</option>
+                                <option value="静岡県">静岡県</option>
+                                <option value="愛知県">愛知県</option>
+                                <option value="三重県">三重県</option>
+                                <option value="滋賀県">滋賀県</option>
+                                <option value="京都府">京都府</option>
+                                <option value="大阪府">大阪府</option>
+                                <option value="兵庫県">兵庫県</option>
+                                <option value="奈良県">奈良県</option>
+                                <option value="和歌山県">和歌山県</option>
+                                <option value="鳥取県">鳥取県</option>
+                                <option value="島根県">島根県</option>
+                                <option value="岡山県">岡山県</option>
+                                <option value="広島県">広島県</option>
+                                <option value="山口県">山口県</option>
+                                <option value="徳島県">徳島県</option>
+                                <option value="香川県">香川県</option>
+                                <option value="愛媛県">愛媛県</option>
+                                <option value="高知県">高知県</option>
+                                <option value="福岡県">福岡県</option>
+                                <option value="佐賀県">佐賀県</option>
+                                <option value="長崎県">長崎県</option>
+                                <option value="熊本県">熊本県</option>
+                                <option value="大分県">大分県</option>
+                                <option value="宮崎県">宮崎県</option>
+                                <option value="鹿児島県">鹿児島県</option>
+                                <option value="沖縄県">沖縄県</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            <!--<label for="skcs">市区町村名</label>-->
+                            <label for="skcs">市区町村名・丁目・番地</label>
+                        </th>
+                        <td>
+                            <p class="sp700">市区町村名</p>
+                            <input tabindex="9" id="skcs" type="text" maxlength="26" placeholder="記入例：東京市東京１‐２‐３"
+                                required="" class="in-data" style="ime-mode: active">
+                            <p class="comment sub">数字、ハイフン、カナ、スペースは全て全角でご記入ください。 　</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            <!--<label for="adr">丁目・番地・建物名等</label>-->
+                            <label for="adr">建物名等</label>
+                        </th>
+                        <td>
+                            <p class="sp700">丁目・番地・建物名等</p>
+                            <input tabindex="10" id="adr" type="text" maxlength="40" placeholder="記入例：○○マンション１０１号室"
+                                required="" class="in-data" style="ime-mode: active">
+                            <p class="comment sub">数字、ハイフン、カナ、スペースは全て全角でご記入ください。 　</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            <label for="telNo">電話番号</label>
+                        </th>
+                        <td>
+                            <p class="sp700">電話番号</p>
+                            <input id="telNo" type="hidden">
+                            <input tabindex="11" id="telNo1" type="text" size="6" maxlength="3" required=""
+                                class="in-data" style="ime-mode: inactive"> -
+                            <input tabindex="12" id="telNo2" type="text" size="6" maxlength="4" required=""
+                                class="in-data" style="ime-mode: inactive"> -
+                            <input tabindex="13" id="telNo3" type="text" size="6" maxlength="4" required=""
+                                class="in-data" style="ime-mode: inactive">
+                            <p class="comment sub">日中ご連絡可能な電話番号を登録してください。
+                                <br> 「 050 」で始まる電話番号は登録できません。
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            <label for="email">メールアドレス</label>
+                        </th>
+                        <td>
+                            <p class="sp700">メールアドレス</p>
+                            <p class="comment sub mb05">お申込み完了後10分前後でメールが届きます。お間違いないようご登録ください。</p>
+                            <input tabindex="14" id="email" type="email" maxlength="128" required="" class="in-data"
+                                style="ime-mode: inactive">
+                            <p class="comment sub mb05">確認のため以下に再度同じメールアドレスをご記入下さい</p>
+                            <input tabindex="15" id="emailConfirm" type="email" maxlength="128" required=""
+                                class="in-data" style="ime-mode: inactive">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <hr>
+        <h3>
+            お支払いいただく方（親権者もしくは契約者）の情報を入力してください。</h3>
+        <div class="formarea">
+            <p class="comment">本人確認書類②、と同じ情報である必要がございます。</p>
+            <table class="step2-table">
+                <tbody>
+                    <tr>
+                        <th>
+                            <label for="bldstNameLast">お名前(親権者)</label>
+                        </th>
+                        <td>
+                            <p class="sp700">お名前(親権者)</p>
+                            <input tabindex="18" id="bldstNameLast" type="text" maxlength="30" placeholder="姓"
+                                required="" class="in-data" style="ime-mode: active">
+                            <input tabindex="19" id="bldstNameFirst" type="text" maxlength="30" placeholder="名"
+                                required="" class="in-data" style="ime-mode: active">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            <label for="bldstNameLastKana">フリガナ(親権者)</label>
+                        </th>
+                        <td>
+                            <p class="sp700">フリガナ(親権者)</p>
+                            <input tabindex="20" id="bldstNameLastKana" type="text" maxlength="30" placeholder="セイ"
+                                required="" class="in-data" style="ime-mode: active">
+                            <input tabindex="21" id="bldstNameFirstKana" type="text" maxlength="30" placeholder="メイ"
+                                required="" class="in-data" style="ime-mode: active">
+                            <p class="comment sub">全角カタカナでご記入下さい</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            ご住居
+                        </th>
+                        <td>
+                            <p class="sp700">ご住居</p>
+                            <input name="live" tabindex="22" class="checkbox" id="live" type="checkbox" value="1">
+                            <label for="live">ご契約者と同じ</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            <label for="bldstZipCode1">郵便番号</label>
+                        </th>
+                        <td>
+                            <p class="sp700">郵便番号</p>
+                            <input tabindex="23" class="bldstZipCode1" name="bldstZipCode1" type="text" maxlength="3" placeholder="000"
+                                required="" class="in-data" style="ime-mode: inactive"> -
+                            <input tabindex="24" class="bldstZipCode2" type="text" maxlength="4" placeholder="0000"
+                                required="" class="in-data" style="ime-mode: inactive">
+                            <p class="comment sub">郵便番号がご不明な場合は
+                                <a href="http://www.post.japanpost.jp/zipcode/" target="_blank">こちら</a>でご確認下さい
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            <label for="bldstTdfk">都道府県</label>
+                        </th>
+                        <td>
+                            <p class="sp700">都道府県名</p>
+                            <select tabindex="25" id="bldstTdfk" required="" class="in-data">
+                                <option value="" selected="">リストより選択して下さい。</option>
+                                <option value="北海道">北海道</option>
+                                <option value="青森県">青森県</option>
+                                <option value="岩手県">岩手県</option>
+                                <option value="宮城県">宮城県</option>
+                                <option value="秋田県">秋田県</option>
+                                <option value="山形県">山形県</option>
+                                <option value="福島県">福島県</option>
+                                <option value="茨城県">茨城県</option>
+                                <option value="栃木県">栃木県</option>
+                                <option value="群馬県">群馬県</option>
+                                <option value="埼玉県">埼玉県</option>
+                                <option value="千葉県">千葉県</option>
+                                <option value="東京都">東京都</option>
+                                <option value="神奈川県">神奈川県</option>
+                                <option value="新潟県">新潟県</option>
+                                <option value="富山県">富山県</option>
+                                <option value="石川県">石川県</option>
+                                <option value="福井県">福井県</option>
+                                <option value="山梨県">山梨県</option>
+                                <option value="長野県">長野県</option>
+                                <option value="岐阜県">岐阜県</option>
+                                <option value="静岡県">静岡県</option>
+                                <option value="愛知県">愛知県</option>
+                                <option value="三重県">三重県</option>
+                                <option value="滋賀県">滋賀県</option>
+                                <option value="京都府">京都府</option>
+                                <option value="大阪府">大阪府</option>
+                                <option value="兵庫県">兵庫県</option>
+                                <option value="奈良県">奈良県</option>
+                                <option value="和歌山県">和歌山県</option>
+                                <option value="鳥取県">鳥取県</option>
+                                <option value="島根県">島根県</option>
+                                <option value="岡山県">岡山県</option>
+                                <option value="広島県">広島県</option>
+                                <option value="山口県">山口県</option>
+                                <option value="徳島県">徳島県</option>
+                                <option value="香川県">香川県</option>
+                                <option value="愛媛県">愛媛県</option>
+                                <option value="高知県">高知県</option>
+                                <option value="福岡県">福岡県</option>
+                                <option value="佐賀県">佐賀県</option>
+                                <option value="長崎県">長崎県</option>
+                                <option value="熊本県">熊本県</option>
+                                <option value="大分県">大分県</option>
+                                <option value="宮崎県">宮崎県</option>
+                                <option value="鹿児島県">鹿児島県</option>
+                                <option value="沖縄県">沖縄県</option>
+                                <option value="北海道">北海道</option>
+                                <option value="青森県">青森県</option>
+                                <option value="岩手県">岩手県</option>
+                                <option value="宮城県">宮城県</option>
+                                <option value="秋田県">秋田県</option>
+                                <option value="山形県">山形県</option>
+                                <option value="福島県">福島県</option>
+                                <option value="茨城県">茨城県</option>
+                                <option value="栃木県">栃木県</option>
+                                <option value="群馬県">群馬県</option>
+                                <option value="埼玉県">埼玉県</option>
+                                <option value="千葉県">千葉県</option>
+                                <option value="東京都">東京都</option>
+                                <option value="神奈川県">神奈川県</option>
+                                <option value="新潟県">新潟県</option>
+                                <option value="富山県">富山県</option>
+                                <option value="石川県">石川県</option>
+                                <option value="福井県">福井県</option>
+                                <option value="山梨県">山梨県</option>
+                                <option value="長野県">長野県</option>
+                                <option value="岐阜県">岐阜県</option>
+                                <option value="静岡県">静岡県</option>
+                                <option value="愛知県">愛知県</option>
+                                <option value="三重県">三重県</option>
+                                <option value="滋賀県">滋賀県</option>
+                                <option value="京都府">京都府</option>
+                                <option value="大阪府">大阪府</option>
+                                <option value="兵庫県">兵庫県</option>
+                                <option value="奈良県">奈良県</option>
+                                <option value="和歌山県">和歌山県</option>
+                                <option value="鳥取県">鳥取県</option>
+                                <option value="島根県">島根県</option>
+                                <option value="岡山県">岡山県</option>
+                                <option value="広島県">広島県</option>
+                                <option value="山口県">山口県</option>
+                                <option value="徳島県">徳島県</option>
+                                <option value="香川県">香川県</option>
+                                <option value="愛媛県">愛媛県</option>
+                                <option value="高知県">高知県</option>
+                                <option value="福岡県">福岡県</option>
+                                <option value="佐賀県">佐賀県</option>
+                                <option value="長崎県">長崎県</option>
+                                <option value="熊本県">熊本県</option>
+                                <option value="大分県">大分県</option>
+                                <option value="宮崎県">宮崎県</option>
+                                <option value="鹿児島県">鹿児島県</option>
+                                <option value="沖縄県">沖縄県</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            <!--<label for="bldstSkcs">市区町村</label>-->
+                            <label for="bldstSkcs">市区町村・丁目・番地</label>
+                        </th>
+                        <td>
+                            <p class="sp700">市区町村名</p>
+                            <input tabindex="26" id="bldstSkcs" type="text" maxlength="26"
+                                placeholder="記入例：大阪市大阪町１２３４‐５６７" required="" class="in-data" style="ime-mode: active">
+                            <p class="comment sub">数字、ハイフン、カナ、スペースは全て全角でご記入ください。 　</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            <!--<label for="bldstAdr">丁目・番地・建物名等</label>-->
+                            <label for="bldstAdr">建物名等</label>
+                        </th>
+                        <td>
+                            <p class="sp700">丁目・番地・建物名等</p>
+                            <input tabindex="27" id="bldstAdr" type="text" maxlength="40" placeholder="記入例：□△マンション"
+                                required="" class="in-data" style="ime-mode: active">
+                            <p class="comment sub">数字、ハイフン、カナ、スペースは全て全角でご記入ください。 　</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            <label for="bldstTelNo">電話番号</label>
+                        </th>
+                        <td>
+                            <p class="sp700">電話番号</p>
+                            <input id="bldstTelNo" type="hidden">
+                            <input tabindex="28" id="bldstTelNo1" type="text" size="6" maxlength="3" required=""
+                                class="in-data" style="ime-mode: inactive"> -
+                            <input tabindex="29" id="bldstTelNo2" type="text" size="6" maxlength="4" required=""
+                                class="in-data" style="ime-mode: inactive"> -
+                            <input tabindex="30" id="bldstTelNo3" type="text" size="6" maxlength="4" required=""
+                                class="in-data" style="ime-mode: inactive">
+                            <p class="comment sub">日中ご連絡可能な電話番号を登録してください。
+                                <br> 「 050 」で始まる電話番号は登録できません。
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            <label for="bldstEmail">メールアドレス</label>
+                        </th>
+                        <td>
+                            <p class="sp700">メールアドレス</p>
+                            <input tabindex="31" id="bldstEmail" type="email" maxlength="128" required=""
+                                class="in-data" style="ime-mode: inactive">
+                            <p class="comment sub mb05">確認のため以下に再度同じメールアドレスをご記入下さい</p>
+                            <input tabindex="32" id="bldstEmailConfirm" type="email" maxlength="128" required=""
+                                class="in-data" style="ime-mode: inactive">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <hr>
+
+        <h3>ご本人様確認書類をアップロードして下さい。</h3>
+        <div class="formarea">
+
+            <p class="centre honimg">
+                <img src="./src/png/kojin_kakunin.png" class="images">
+            </p>
+            <hr class="honimg">
+            <h4>本人確認書類①をアップロードしてください。　（ご契約者内容と一致している必要がございます。）</h4>
+            <h4>
+                <font color="red">下記ご提出必須となります。</font>
+            </h4>
+            <table class="step2-table">
+
+
+
+
+
+
+
+            </table>
+            <table class="step2-table">
+                <tbody>
+                    <tr>
+                        <th>
+                            <label for="confirm_doc_1">本人確認書類　①</label>
+                        </th>
+                        <td>
+                            <input name="confirm_doc_1" tabindex="53" id="confirm_doc_1" type="file">
+                            <p class="comment sub">3MB以下のJPEG(jpg)、PNG、PDF形式に対応しております</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <hr>
+            <h4>本人確認書類②をアップロードしてください。（お支払いいただく方の内容と一致している必要がございます。）</h4>
+            <h4>
+                <font color="red">②-1はご提出必須となります。</font>
+            </h4>
+            <table class="step2-table">
+                <tbody>
+                    <tr>
+                        <th>
+                            <label for="confirm_doc_1">本人確認書類　②-1</label>
+                        </th>
+                        <td>
+                            <input name="confirm_doc_1" tabindex="54" id="confirm_doc_2" type="file">
+                            <p class="comment sub">3MB以下のJPEG(jpg)、PNG、PDF形式に対応しております</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            <label for="confirm_doc_2"> 本人確認書類　②-2</label>
+                        </th>
+                        <td>
+                            <input name="confirm_doc_1" tabindex="55" id="confirm_doc_3" type="file">
+                            <p class="comment sub">3MB以下のJPEG(jpg)、PNG、PDF形式に対応しております</p>
+                        </td>
+                    </tr>
+                    <!--<tr>
+                                            <th>
+                                                <label for="confirm_doc_3">本人確認書類3</label>
+                                            </th>
+                                            <td>
+                                                <input name="confirm_doc_1" tabindex="58" id="confirm_doc_6" type="file">
+                                                <p class="comment sub">3MB以下のJPEG(jpg)、PNG、PDF形式に対応しております</p>
+                                            </td>
+                                        </tr>-->
+                </tbody>
+            </table>
+            <hr>
+            <p class="uploaddeny">
+                本人確認書類を電子ファイルでアップロードできない方は
+                <br> 下記の宛先までFAX、メールまたは郵送をお願いします。ご不明点はお電話で承ります。
+                <br> FAX：050-3153-3368
+                <br> メール：support@diswimax.jp
+                <br> 住所：〒812-0038 福岡県福岡市博多区祇園町4-2博多祇園ビル4F DIS mobile事務局宛
+                <br> 電話：0120-952-091（営業時間11：00～20：00、メンテナンス日を除き年中無休）
+            </p>
+        </div>
+
+        <div class="next_step" class="centre clearfix">
+            <input class="nextstep" name="button_return" id="step1_back_btn" type="button"
+                value="戻る&#13;&#10;ステップ1（確認事項）へ">
+            <input class="nextstep" name="button_confirm" id="step3_next_btn" type="button" value="ステップ3（情報入力・お支払い情報入力）へ
+                ※ステップ4で申込完了します。">
+        </div>
+    </div>
+</div>
