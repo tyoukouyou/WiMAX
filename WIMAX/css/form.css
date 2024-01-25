@@ -460,15 +460,27 @@ main .container .next_step .nextstep:hover {
   background-color: #004EA2;
   color: white;
 }
-main .container .next_step #step2_next_btn {
-  width: 65%;
-  float: right;
-}
 main .container .next_step #step1_back_btn {
   width: 30%;
   float: left;
 }
+main .container .next_step #step2_next_btn {
+  width: 65%;
+  float: right;
+}
+main .container .next_step #step2_back_btn {
+  width: 30%;
+  float: left;
+}
 main .container .next_step #step3_next_btn {
+  width: 65%;
+  float: right;
+}
+main .container .next_step #step3_back_btn {
+  width: 30%;
+  float: left;
+}
+main .container .next_step #step4_next_btn {
   width: 65%;
   float: right;
 }

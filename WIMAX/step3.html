@@ -1,0 +1,322 @@
+<div class="policy">
+    <div class="agreement">
+        <h3>申込内容をご確認ください。</h3>
+        <div class="formarea">
+            <p class="text">以下の内容でよろしければ「申し込む」ボタンをクリックしてください。
+                <br> 修正する場合は「戻る」ボタンをクリックしてください。
+            </p>
+            <!-- /headSec2 -->
+
+            <div id="cust_other_error" style="background-color:#FFCC00;"></div>
+            <h4>確認事項</h4>
+            <br>
+            <table class="step2-table">
+
+            </table>
+            <table class="step2-table">
+                <tbody>
+                    <tr>
+                        <th>重要事項説明、約款</th>
+                        <td>
+                            <p class="sp700">重要事項説明、約款</p>
+                            同意する
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>確認事項</th>
+                        <td>
+                            <p class="sp700">確認事項</p>全て同意する
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+
+            <h4>契約情報、料金プラン</h4>
+
+            <table class="step2-table">
+                <tbody>
+                    <tr>
+                        <th>料金プラン</th>
+                        <td>
+                            <p class="content">{inputParams}</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>端末</th>
+                        <td>
+                            <p class="content">{inputParams}</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+
+            <h4>契約者情報</h4>
+
+            <table class="step2-table">
+                <tbody>
+                    <tr>
+                        <th>契約者（姓）</th>
+                        <td>
+                            <p class="content" id="lastName"></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>契約者（名）</th>
+                        <td>
+                            <p class="content" id="firstName"></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>契約者カナ（姓）</th>
+                        <td>
+                            <p class="content" id="lastNameKana"></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>契約者カナ（名）</th>
+                        <td>
+                            <p class="content" id="firstNameKana"></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>生年月日</th>
+                        <td>
+                            <p class="content" id="birthDay"></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>郵便番号</th>
+                        <td>
+                            <span class="content" id="zipCode1"></span>
+                            <span>-</span>
+                            <span class="content" id="zipCode2"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>都道府県</th>
+                        <td>
+                            <p class="content" id="area"></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>市区町村</th>
+                        <td>
+                            <p class="content" id="address1"></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>その他住所</th>
+                        <td>
+                            <p class="content" id="address2"></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>電話番号</th>
+                        <td>
+                            <span class="content" id="telNo1"></span>
+                            <span>-</span>
+                            <span class="content" id="telNo2"></span>
+                            <span>-</span>
+                            <span class="content" id="telNo3"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>メールアドレス</th>
+                        <td>
+                            <p class="content" id="email"></p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+
+            <h4>親権者情報</h4>
+            <table class="step2-table">
+                <tbody>
+                    <tr>
+                        <th>親権者（姓）</th>
+                        <td>
+                            <p class="content" id="payerLastName"></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>親権者（名）</th>
+                        <td>
+                            <p class="content" id="payerFirstName"></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>親権者カナ（姓）</th>
+                        <td>
+                            <p class="content" id="payerLastNameKana"></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>親権者カナ（名）</th>
+                        <td>
+                            <p class="content" id="payerFirstNameKana"></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>郵便番号</th>
+                        <td>
+                            <span class="content" id="payerZipCode1"></span>
+                            <span>-</span>
+                            <span class="content" id="payerZipCode2"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>都道府県</th>
+                        <td>
+                            <p class="content" id="payerArea"></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>市区町村</th>
+                        <td>
+                            <p class="content" id="payerAddress1"></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>その他住所</th>
+                        <td>
+                            <p class="content" id="payerAddress2"></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>電話番号</th>
+                        <td>
+                            <span class="content" id="payerTelNo1"></span>
+                            <span>-</span>
+                            <span class="content" id="payerTelNo2"></span>
+                            <span>-</span>
+                            <span class="content" id="payerTelNo3"></span>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>メールアドレス</th>
+                        <td>
+                            <p class="content" id="payerEmail"></p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+            <h3>
+                お支払情報を入力して下さい。</h3>
+            <div class="formarea">
+                <p class="comment mb10">お支払情報は、VISA・MasterCard・JCB・AmericanExpressマークのついたクレジットカードのみとさせていただきます。<br>
+                    ご利用いただく学生もしくは親権者ご本人名義のカードであればどちらでもご利用いただけます。<br>
+                    ご契約後でも変更していただけます。<br>
+                </p>
+                <div id="card_error" style="background-color:#FFCC00;"></div>
+                <table class="step2-table">
+                    <tbody>
+                        <tr>
+                            <th>
+                                <label for="stmtKbn">お支払方法</label>
+                            </th>
+                            <td>
+                                <p class="sp700">お支払方法</p>
+                                <select tabindex="1" id="stmtKbn" class="in-card" disabled="disabled">
+                                    <option value="4">クレジットカード</option>
+                                </select>
+                                <p class="comment sub">お支払方法はクレジットカードのみとなります。</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <label for="cardNo1">クレジットカード番号</label>
+                            </th>
+                            <td>
+                                <p class="sp700">クレジットカード番号</p>
+                                <input id="cardNo" type="hidden">
+                                <input tabindex="1" id="cardNo1" type="text" maxlength="4" class="in-card"
+                                    style="ime-mode: inactive"> -
+                                <input tabindex="2" id="cardNo2" type="text" maxlength="4" class="in-card"
+                                    style="ime-mode: inactive"> -
+                                <input tabindex="3" id="cardNo3" type="text" maxlength="4" class="in-card"
+                                    style="ime-mode: inactive"> -
+                                <input tabindex="4" id="cardNo4" type="text" maxlength="4" class="in-card"
+                                    style="ime-mode: inactive">
+                                <p class="comment sub">AmericanExpressカードの場合は最初に0を加えて下さい。
+                                    <br> カード番号が「123456789012345」の場合は「0123 - 4567 - 8901 - 2345」となります。
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <label for="cardDay1">クレジットカード有効期限</label>
+                            </th>
+                            <td>
+                                <p class="sp700">クレジットカード有効期限</p>
+                                <input tabindex="5" id="cardDay1" type="text" maxlength="2" class="in-card"
+                                    style="ime-mode: inactive">月／20
+                                <input tabindex="6" id="cardDay2" type="text" maxlength="2" class="in-card"
+                                    style="ime-mode: inactive">年
+                                <p class="comment sub">有効期限が2029年9月の場合、09 月/20 29 年と入力してください。</p>
+                            </td>
+                        </tr>
+                        <tr style="display:none">
+                            <th>
+                                <label for="secuCode">セキュリティコード</label>
+                            </th>
+                            <td>
+                                <p class="sp700">セキュリティコード</p>
+                                <input tabindex="7" id="secuCode" type="text" maxlength="4" class="in-card"
+                                    style="ime-mode: inactive">
+                                <p class="comment sub">カードの裏面の数字 3桁 を入力してください。
+                                    AmericanExpressカードの場合はカード番号（表面）の右上ある4桁を入力してください。</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <hr>
+
+            <h4>本人確認書類</h4>
+            <table class="step2-table">
+                <tbody>
+                    <tr id="syomeinashi_hon">
+                        <th>本人確認書類</th>
+                        <td>
+                            <p class="content">アップロードした画像以外でご申請が必要が場合にはコールセンターへご相談の上、別途FAX、メール、郵送で送付してください。</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+
+            <div class="headSec">
+
+                <p class="text">記入内容がすべて正しい場合は下記にチェックを入れて下さい。</p>
+                <!-- /headSec -->
+            </div>
+
+            <p class="text lastcheck" style="margin-bottom:50px;">
+                <input name="check" id="last_agree" type="checkbox" value="1"><label
+                    for="last_agree"><span>上記同意のうえ、申し込みます。</span></label>
+            </p>
+
+            <hr>
+            <p class="uploaddeny">
+                本人確認書類を電子ファイルでアップロードできない方は
+                <br> 下記の宛先までFAX、メールまたは郵送をお願いします。ご不明点はお電話で承ります。
+                <br> FAX：050-3153-3368
+                <br> メール：support@diswimax.jp
+                <br> 住所：〒812-0038 福岡県福岡市博多区祇園町4-2博多祇園ビル4F DIS mobile事務局宛
+                <br> 電話：0120-952-091（営業時間11：00～20：00、メンテナンス日を除き年中無休）
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="next_step" class="centre clearfix" "="">
+    <button class=" nextstep" name="button_return" id="step2_back_btn" type="button"> 戻る<br>ステップ2<br>(情報入力,確認事項)へ
+    </button>
+    <button class="nextstep" name="button_confirm" id="step4_next_btn" type="button">
+        申し込むステップ4（申込完了・印刷）へ<br>※ステップ4で申込完了します。 </button>
+</div>

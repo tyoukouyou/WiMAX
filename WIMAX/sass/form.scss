@@ -492,12 +492,17 @@ main {
 
 			}
 
+			#step1_back_btn {
+				width: 30%;
+				float: left;
+			}
+
 			#step2_next_btn {
 				width: 65%;
 				float: right;
 			}
 
-			#step1_back_btn {
+			#step2_back_btn {
 				width: 30%;
 				float: left;
 			}
@@ -506,6 +511,18 @@ main {
 				width: 65%;
 				float: right;
 			}
+
+			#step3_back_btn {
+				width: 30%;
+				float: left;
+			}
+
+			#step4_next_btn {
+				width: 65%;
+				float: right;
+			}
+
+			
 
 		}
 
