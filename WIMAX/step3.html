@@ -1,4 +1,4 @@
-<div class="policy">
+<div class="content-container">
     <div class="agreement">
         <h3>申込内容をご確認ください。</h3>
         <div class="formarea">
@@ -39,13 +39,17 @@
                     <tr>
                         <th>料金プラン</th>
                         <td>
-                            <p class="content">{inputParams}</p>
+                            <p class="content" id="plan"></p>
                         </td>
                     </tr>
                     <tr>
                         <th>端末</th>
                         <td>
-                            <p class="content">{inputParams}</p>
+                            <span class="content">DIS mobile WiMAX専用</span>
+                            <span>&nbsp;</span>
+                            <span class="content" id="confirm-form-05"></span>
+                            <span>&nbsp;</span>
+                            <span class="content" id="confirm-form-06"></span>
                         </td>
                     </tr>
                 </tbody>
@@ -314,7 +318,7 @@
     </div>
 </div>
 
-<div class="next_step" class="centre clearfix" "="">
+<div class="next_step" class="centre fix" "="">
     <button class=" nextstep" name="button_return" id="step2_back_btn" type="button"> 戻る<br>ステップ2<br>(情報入力,確認事項)へ
     </button>
     <button class="nextstep" name="button_confirm" id="step4_next_btn" type="button">

@@ -66,7 +66,7 @@ html {
         margin: 0 auto;
         padding: 0 0 3em;
 
-        .important_notices {
+        .sales-promotion {
             text-align: center;
             width: 96%;
             margin: 2em auto;
@@ -86,7 +86,6 @@ html {
                     border-radius: 0.5em;
                     padding: 1em;
                     margin-bottom: 1em;
-                    font-family: 'Noto Sans JP', YuGothic, "Yu Gothic medium", "游ゴシック", "Hiragino Sans", Meiryo, "sans-serif";
                     font-weight: 700;
                     color: #ff4081;
                     font-size: 2em;
@@ -126,7 +125,7 @@ html {
             }
         }
 
-        .cont01 {
+        .section01 {
             background-color: #f3f9fe;
             padding: 2em 3em 1.5em;
 
@@ -194,7 +193,7 @@ html {
 
         }
 
-        .cont02 {
+        .section02 {
             background-color: #eee;
             padding: 2em 1em 1.5em;
             display: flex;
@@ -242,7 +241,7 @@ html {
             }
         }
 
-        .cont03 {
+        .section03 {
             max-width: 800px;
             margin: 2em auto;
             padding: 0 1em;
@@ -263,7 +262,7 @@ html {
 
         }
 
-        .cont_faq {
+        .section-faq {
             background-color: #f3f9fe;
             padding: 2em 1em;
 
@@ -368,7 +367,7 @@ html {
             }
         }
 
-        .cont04 {
+        .section04 {
             background-color: #eee;
             padding: 2em 1em;
 
@@ -407,7 +406,7 @@ html {
                 }
             }
 
-            .product_container {
+            .product-container {
                 display: flex;
 
                 @media screen and (max-width: 899px) {
@@ -415,7 +414,7 @@ html {
                 }
             }
 
-            .product_detail {
+            .product-detail {
                 width: calc(50% - 2em);
                 padding: 1.5em 1.5em 7em;
                 margin: 0 1em;
@@ -479,7 +478,7 @@ html {
                 }
             }
 
-            .column2 {
+            .product-table {
                 display: flex;
                 justify-content: space-between;
                 align-items: flex-start;
@@ -638,7 +637,7 @@ html {
             }
         }
 
-        .cont05 {
+        .section05 {
             padding: 2em;
             text-align: center;
             display: none;
@@ -677,9 +676,9 @@ html {
             }
         }
 
-        .daigaku_select {
+        .daigaku-select {
             p {
-                &.dlst_select {
+                &.d-option-select {
                     position: relative;
                     margin: 0 auto;
 
@@ -718,9 +717,9 @@ html {
 
         }
 
-        .gakunen_select {
+        .gakunen-select {
             p {
-                &.glst_select {
+                &.g-option-select {
                     position: relative;
                     margin: 0 auto;
 
@@ -754,20 +753,20 @@ html {
             }
         }
 
-        .daigaku_select p.dlst_select,
-        .gakunen_select p.glst_select {
+        .daigaku-select p.d-option-select,
+        .gakunen-select p.g-option-select {
             width: 600px !important;
             max-width: 100%;
             font-size: 1.125em;
             text-align: left;
         }
 
-        .cont06 {
+        .section06 {
             background-color: #f3f9fe;
             padding: 2em;
             display: none;
 
-            .delivery {
+            .confirm-detail {
                 border-bottom: #ddd 1px solid;
 
                 @media screen and (max-width: 480px) {
@@ -783,16 +782,6 @@ html {
                     padding-left: 1.5em;
                     text-indent: -1.5em;
                     margin: 0 0 0.5em;
-                }
-
-                .delivery_date {
-                    text-align: center;
-
-                    input {
-                        font-size: 1.126em;
-                        padding: 0.5em;
-                        max-width: 100%;
-                    }
                 }
 
                 .post-day {
@@ -874,6 +863,7 @@ html {
                         padding: 0.5em;
                         border-radius: 1.5em;
                         border: none;
+                        cursor: pointer;
 
                         &:hover {
                             opacity: 0.8;
@@ -884,7 +874,7 @@ html {
                 }
             }
 
-            & .delivery,
+            & .confirm-detail,
             & .confirm {
                 width: 900px;
                 max-width: 100%;
@@ -951,6 +941,11 @@ html {
                     }
                 }
             }
+        }
+
+        .company{
+            width: 30vw;
+            margin: 0 auto;
         }
     }
 

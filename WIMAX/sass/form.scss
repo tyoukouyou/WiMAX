@@ -11,6 +11,10 @@ h2 {
 	padding: 20px 0;
 	text-align: center;
 	overflow: hidden;
+	@media screen and (max-width:1000px) {
+		font-size: 2.0rem;
+		line-height: 1.5;
+	}
 }
 
 .text {
@@ -18,6 +22,20 @@ h2 {
 	padding: 10px;
 	font-size: 1.5rem;
 	line-height: 1.5em;
+
+	@media screen and (min-width:700px) and (max-width:980px) {
+		margin: 0;
+		padding: 10px;
+		font-size: 1.5rem;
+		line-height: 1.5em;
+	}
+
+	@media screen and (max-width:700px) {
+		margin: 0;
+		padding: 10px;
+		font-size: 1.5em;
+		line-height: 1.5em;
+	}
 }
 
 header {
@@ -34,16 +52,21 @@ header {
 		overflow: hidden;
 		text-align: center;
 
+
 		img {
 			height: 100%;
 			width: auto;
 		}
 	}
 
-	.cont {
+	.titie-container {
 		width: 100%;
 		max-width: 960px;
 		margin: 0 auto;
+
+		@media screen and (min-width:700px) and (max-width:980px) {
+			padding: 0 10px;
+		}
 	}
 
 	.step-container {
@@ -51,18 +74,25 @@ header {
 		max-width: 960px;
 		margin: 0 auto;
 
-		.step {
+		.step-box {
 			width: 100%;
 			border-bottom: 1px solid #CCC;
 			background-color: #FAFAFA;
 			margin-bottom: 5rem;
 
-			.cont {
+
+			.step {
 				width: 100%;
 				max-width: 960px;
 				margin: 0 auto;
 				border-right: 1px solid #CCC;
 				background-color: white;
+
+				@media screen and (min-width:700px) and (max-width:980px) {
+					width: 100%;
+					padding: 0;
+					border-right: none;
+				}
 
 				dl {
 					display: block;
@@ -73,6 +103,7 @@ header {
 					background-size: auto 100%;
 					background-repeat: no-repeat;
 					background-position: left top;
+
 
 					&.active {
 						background-color: #004EA2;
@@ -98,26 +129,37 @@ header {
 						border-left: 1px solid #004EA2;
 					}
 
+					&:first-child {
+						@media screen and (min-width:700px) and (max-width:980px) {
+							border-left: none;
+						}
+					}
+
 				}
 
 				dt {
 					width: 100%;
 					font-weight: bold;
-					font-family: 'Segoe UI';
 					text-align: center;
 					padding: 7px 10px 7px 47px;
 					font-size: 1.8rem;
 					line-height: 1em;
 					color: #004EA2;
+					@media screen and (max-width:1000px) {
+						font-size: 1.6rem;
+						padding: 7px 10px 7px 12px;
+					}
 				}
 
 				dd {
 					width: 100%;
-					font-family: 'Segoe UI';
 					text-align: center;
 					padding: 0 10px 7px 47px;
 					font-size: 1.3rem;
 					line-height: 1em;
+					@media screen and (max-width:1000px) {
+						display: none;
+					}
 				}
 			}
 
@@ -136,8 +178,16 @@ main {
 
 
 
-		.policy {
+		.content-container {
 			.agreement {
+				@media screen and (min-width:700px) and (max-width:980px) {
+					padding: 0 10px;
+				}
+
+				@media screen and (max-width:700px) {
+					padding: 7px !important;
+				}
+
 				h3 {
 					width: 100%;
 					border: 1px solid #004EA2;
@@ -158,6 +208,10 @@ main {
 					border-top: 1px solid #CCC;
 					border-bottom: none;
 					margin: 4rem 0;
+
+					@media screen and (max-width:700px) {
+						margin: 2rem 0;
+					}
 				}
 
 				.ifm-container {
@@ -176,11 +230,43 @@ main {
 					border-radius: 0 0 5px 5px;
 					border-top: none;
 
+					@media screen and (min-width:700px) and (max-width:980px) {
+						width: 100%;
+						text-align: center;
+						padding: 12px;
+						height: 100%;
+						border: 1px solid #004EA2;
+						border-radius: 0 0 5px 5px;
+						border-top: none;
+					}
+
+					@media screen and (max-width:700px) {
+						width: 100%;
+						text-align: center;
+						padding: 12px;
+						height: 100%;
+						border: 1px solid #004EA2;
+						border-radius: 0 0 5px 5px;
+						border-top: none;
+					}
+
 					iframe {
 						border: none;
 						overflow-y: scroll;
 						width: 100%;
 						height: 100%;
+
+						@media screen and (min-width:700px) and (max-width:980px) {
+							width: 100%;
+							height: 100%;
+						}
+
+						@media screen and (max-width:700px) {
+							width: 100%;
+							height: 100%;
+							border: none;
+							overflow-y: scroll;
+						}
 					}
 				}
 
@@ -193,11 +279,28 @@ main {
 					border-radius: 0 0 5px 5px;
 					border-top: none;
 
+					@media screen and (min-width:700px) and (max-width:980px) {
+						width: 100%;
+						text-align: center;
+						padding: 15px;
+						height: 100%;
+						border: 1px solid #004EA2;
+						border-radius: 0 0 5px 5px;
+						border-top: none;
+					}
+
 					iframe {
 						border: none;
 						overflow-y: scroll;
 						width: 100%;
 						height: 100%;
+
+						@media screen and (min-width:700px) and (max-width:980px) {
+							border: none;
+							overflow-y: scroll;
+							width: 100%;
+							height: 100%;
+						}
 					}
 				}
 
@@ -207,6 +310,8 @@ main {
 					border-radius: 5px;
 					padding: 15px;
 					margin: 20px 0;
+
+
 
 					.error-notice {
 						width: 60vw;
@@ -219,7 +324,22 @@ main {
 						margin: 0;
 						padding-right: 100px;
 						padding-left: 100px;
-						font-family: Meiryo, "メイリオ";
+
+						@media screen and (min-width:700px) and (max-width:980px) {
+							text-align: center;
+							font-size: 1.5em;
+							margin: 0;
+							padding-right: 10px;
+							padding-left: 10px;
+						}
+
+						@media screen and (max-width:700px) {
+							text-align: center;
+							font-size: 1.2em;
+							margin: 0;
+							padding-right: 10px;
+							padding-left: 10px;
+						}
 					}
 
 					input[type=radio] {
@@ -237,8 +357,19 @@ main {
 							font-size: 2.1rem;
 							font-weight: normal;
 							float: left;
-							font-family: Meiryo, "メイリオ";
 							position: relative;
+
+							@media screen and (max-width:700px) {
+
+								width: 100% !important;
+								margin: 2rem auto 0 auto;
+
+							}
+
+							@media screen and (min-width:700px) and (max-width:980px) {
+								width: 100% !important;
+								margin: 2rem 0 1rem 0;
+							}
 						}
 
 						&+label::before {
@@ -296,6 +427,24 @@ main {
 							margin-bottom: 5px;
 							background-color: white;
 							padding: 10px;
+
+							@media screen and (min-width:700px) and (max-width:980px) {
+								display: block;
+								font-size: 1.2em;
+								line-height: 1em;
+								margin-bottom: 5px;
+								background-color: white;
+								padding: 10px;
+							}
+
+							@media screen and (max-width:700px) {
+								display: block;
+								font-size: 1.2rem;
+								line-height: 1em;
+								margin-bottom: 5px;
+								background-color: white;
+								padding: 10px;
+							}
 						}
 
 						&+label:hover {
@@ -353,6 +502,10 @@ main {
 					border-radius: 0 0 5px 5px;
 					border-top: none;
 
+					@media screen and (max-width:700px) {
+						padding: 7px !important;
+					}
+
 					h4 {
 						font-size: 1.9em;
 						font-weight: bold;
@@ -369,6 +522,26 @@ main {
 						font-size: 1.5rem;
 						border: 1px solid #CCC;
 						border-radius: 5px;
+
+						@media screen and (min-width:700px) and (max-width:980px) {
+							margin: 0;
+							padding: 5px;
+							background-color: #FFFDE7;
+							text-align: left;
+							font-size: 1.5rem;
+							border: 1px solid #CCC;
+							border-radius: 5px;
+						}
+
+						@media screen and (max-width:700px) {
+							margin: 0;
+							padding: 5px;
+							background-color: #FFFDE7;
+							text-align: left;
+							font-size: 1.0rem;
+							border: 1px solid #CCC;
+							border-radius: 5px;
+						}
 					}
 
 					.sub {
@@ -377,6 +550,22 @@ main {
 						text-align: left;
 						line-height: 1em;
 						color: #333;
+
+						@media screen and (min-width:700px) and (max-width:980px) {
+							margin-top: 5px;
+							font-size: 1.5rem;
+							text-align: left;
+							line-height: 1em;
+							color: #333;
+						}
+
+						@media screen and (max-width:700px) {
+							margin-top: 5px;
+							font-size: 1.5em;
+							text-align: left;
+							line-height: 1em;
+							color: #333;
+						}
 					}
 
 					.step2-table {
@@ -384,6 +573,20 @@ main {
 						border-collapse: collapse;
 						font-size: 1.5em;
 						box-sizing: border-box !important;
+
+						@media screen and (min-width:700px) and (max-width:980px) {
+							width: 100% !important;
+							border-collapse: collapse;
+							font-size: 1.5rem;
+							box-sizing: border-box !important;
+						}
+
+						@media screen and (max-width:700px) {
+							width: 100% !important;
+							border-collapse: collapse;
+							font-size: 1.0rem;
+							box-sizing: border-box !important;
+						}
 
 						th,
 						td {
@@ -396,10 +599,18 @@ main {
 							background-color: #E0F7FA;
 							padding: 15px;
 							width: 25%;
+
+							// @media screen and (max-width:700px) {
+							// 	display: none;
+							// }
 						}
 
 						td {
 							padding: 15px;
+
+							@media screen and (max-width:700px) {
+								padding: 10px;
+							}
 						}
 
 						input,
@@ -445,9 +656,39 @@ main {
 						input[type="file"] {
 							width: 100%;
 						}
+
 						.sp700,
 						.sp700txt {
 							display: none;
+						}
+
+						.sp700 {
+							@media screen and (max-width:700px) {
+								display: block;
+								font-weight: bold;
+								color: #004EA2;
+								width: 100%;
+								padding: 5px;
+								line-height: 1em;
+								margin: 0 0 5px 0;
+								border-left: 3px solid #004EA2;
+							}
+						}
+
+						.sp700txt {
+							@media screen and (max-width:700px) {
+								display: block;
+								width: 100%;
+								padding: 5px;
+								font-size: 1.5em !important;
+								line-height: 1.3em;
+								text-align: left !important;
+							}
+						}
+
+						.error-notice{
+							padding-top: 1.333vw;
+							font-size: 1em;
 						}
 
 
@@ -464,6 +705,26 @@ main {
 						font-size: 1.5em;
 						border: 1px solid #CCC;
 						border-radius: 5px;
+
+						@media screen and (min-width:700px) and (max-width:980px) {
+							margin: 0;
+							padding: 15px;
+							background-color: #FFFDE7;
+							text-align: left;
+							font-size: 1.5rem;
+							border: 1px solid #CCC;
+							border-radius: 5px;
+						}
+
+						@media screen and (max-width:700px) {
+							margin: 0;
+							padding: 15px;
+							background-color: #FFFDE7;
+							text-align: left;
+							font-size: 1.2rem;
+							border: 1px solid #CCC;
+							border-radius: 5px;
+						}
 					}
 
 				}
@@ -484,6 +745,24 @@ main {
 				width: 68%;
 				box-sizing: border-box !important;
 
+				@media screen and (min-width:700px) and (max-width:980px) {
+					width: calc(100% - 20px);
+					margin: 2rem 10px;
+					font-size: 1.5em;
+				}
+
+				@media screen and (max-width:700px) {
+					margin: 7px;
+					border-radius: 5px;
+					padding: 10px;
+					background-color: white;
+					border: 3px solid #004EA2;
+					font-size: 1.3em;
+					color: #004EA2;
+					font-weight: bold;
+
+				}
+
 				&:hover {
 					background-color: #004EA2;
 					color: white;
@@ -495,34 +774,83 @@ main {
 			#step1_back_btn {
 				width: 30%;
 				float: left;
+
+				@media screen and (max-width:700px) {
+					float: none;
+					width: calc(100% - 15px);
+					margin-bottom: 5px;
+				}
 			}
 
 			#step2_next_btn {
 				width: 65%;
 				float: right;
+
+				@media screen and (min-width:700px) and (max-width:980px) {
+					width: 60%;
+					float: right;
+				}
+
+				@media screen and (max-width:700px) {
+					width: 60%;
+					float: right;
+
+				}
 			}
 
 			#step2_back_btn {
 				width: 30%;
 				float: left;
+
+				@media screen and (max-width:700px) {
+					float: none;
+					width: calc(100% - 15px);
+					margin-bottom: 5px;
+				}
 			}
 
 			#step3_next_btn {
 				width: 65%;
 				float: right;
+
+				@media screen and (min-width:700px) and (max-width:980px) {
+					width: 60%;
+					float: right;
+				}
+
+				@media screen and (max-width:700px) {
+					width: 60%;
+					float: right;
+				}
 			}
 
 			#step3_back_btn {
 				width: 30%;
 				float: left;
+
+				@media screen and (min-width:700px) and (max-width:980px) {
+					width: 60%;
+					float: right;
+				}
+
+				@media screen and (max-width:700px) {
+					float: none;
+					width: calc(100% - 15px);
+					margin-bottom: 5px;
+				}
 			}
 
 			#step4_next_btn {
 				width: 65%;
 				float: right;
+
+				@media screen and (max-width:700px) {
+					width: 60%;
+					float: right;
+				}
 			}
 
-			
+
 
 		}
 
@@ -543,4 +871,7 @@ footer {
 	height: 3em;
 	text-align: center;
 	vertical-align: middle;
+	@media screen and (max-width:1000px) {
+		font-size: 1.6em;
+	}
 }

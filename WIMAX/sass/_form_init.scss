@@ -16,7 +16,7 @@ html {
 			height: auto;
 		}
 
-		.clearfix:after {
+		.fix:after {
 			content: "";
 			clear: both;
 			display: block;
@@ -50,6 +50,16 @@ html {
 			text-align: center;
 			margin: 0 auto;
 			display: none;
+		}
+
+		.error-add{
+			width: 40vw;
+			display: block;
+			color: red;
+			font-size: 1em;
+			font-weight: bold;
+			text-align: center;
+			margin: 0 auto;
 		}
 	}
 }

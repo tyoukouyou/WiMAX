@@ -14,7 +14,7 @@ var init_step_1 = false;
 function step1_init() {
     // 使用 AJAX 加载 step1.html 的内容
     $.ajax({
-        url: "./step2.html", // 替换为实际的文件路径
+        url: "./step1.html", // 替换为实际的文件路径
         type: "GET",
         dataType: "html",
         success: function (response) {
@@ -65,6 +65,16 @@ var inputIds = ['lastName',
     'payerEmailConfirm',
 ];
 
+// 存储Cookie需要获取值的输入元素的id
+var cookie_inputIds = ['plan',
+    'confirm-form-01',
+    'confirm-form-02',
+    'confirm-form-03',
+    'confirm-form-04',
+    'confirm-form-05',
+    'confirm-form-06',
+];
+
 function getValuesAndStoreInDictionary() {
 
 
@@ -94,12 +104,53 @@ function restoreValuesFromDictionary(valuesDictionary) {
 
         // 如果找到了input元素，将字典中的值设置为其值
         if (inputElement) {
-            inputElement.innerText  = valuesDictionary[inputId];
+            inputElement.innerText = valuesDictionary[inputId];
         }
     });
 }
 
+function restoreCookieData(cookieData) {
+    // console.log(cookieData);
+    // console.log(cookieData["plan"]);
+    // 从cookie中获取字典并使用
+    document.getElementById("plan").innerText = cookieData["plan"];
+    document.getElementById("confirm-form-05").innerText = cookieData["confirm-form-05"];
+    document.getElementById("confirm-form-06").innerText = cookieData["confirm-form-06"];
+}
 
+// check form data
+// function checkStep2FormData() {
+//     for (let i = 0; i < inputIds.length; i++) {
+//         const element = document.getElementById(inputIds[i]);
+//         if (!element || element.value.trim() === '') {
+//             return false;
+//         }
+//     }
+//     return true;
+// }
+function checkStep2FormData(inputIds) {
+    return inputIds.every((inputId) => {
+        const element = document.getElementById(inputId);
+        return element && element.value.trim() !== '';
+    });
+}
+
+// 若有空值，增加提示文字
+function addErrorNotice(inputId, errorMessage) {
+    const inputElement = document.getElementById(inputId);
+
+    if (inputElement && inputElement.parentNode) {
+        // 在空值的输入元素下方添加错误提示
+        const errorNotice = document.createElement('span');
+        errorNotice.className = 'error-add';
+        errorNotice.textContent = errorMessage;
+
+        // 如果父元素是label，可能会更适合放在label下面
+        inputElement.parentNode.appendChild(errorNotice);
+        // 如果父元素不是label，可以直接在input元素后面插入
+        // inputElement.parentNode.insertBefore(errorNotice, inputElement.nextSibling);
+    }
+}
 
 
 // 加载类函数
@@ -143,20 +194,22 @@ $(document).ready(function () {
         console.log(init_step_1);
     }
 
+
+
     // 使用事件委托处理步骤按钮的点击事件
     $(document).on('click', '#step2_next_btn', function () {
 
         checkFormData(init_step_1)
         if (init_step_1) {
             // Remove 'active' & 'next' class
-            $(".step-container .cont dl.active").removeClass("active");
-            $(".step-container .cont dl.next").removeClass("next");
+            $(".step-container .step dl.active").removeClass("active");
+            $(".step-container .step dl.next").removeClass("next");
 
             // Add 'active' class to the next dl (STEP2)
-            $(".step-container .cont dl:contains('STEP2')").addClass("active");
+            $(".step-container .step dl:contains('STEP2')").addClass("active");
 
             // Add 'next' class to the next dl (STEP3)
-            $(".step-container .cont dl:contains('STEP3')").addClass("next");
+            $(".step-container .step dl:contains('STEP3')").addClass("next");
 
             // 使用 AJAX 加载 step2.html 的内容
             $.ajax({
@@ -179,14 +232,14 @@ $(document).ready(function () {
 
     $(document).on('click', '#step1_back_btn', function () {
         // Remove 'active' & 'next' class
-        $(".step-container .cont dl.active").removeClass("active");
-        $(".step-container .cont dl.next").removeClass("next");
+        $(".step-container .step dl.active").removeClass("active");
+        $(".step-container .step dl.next").removeClass("next");
 
         // Add 'active' class to the previous dl (STEP1)
-        $(".step-container .cont dl:contains('STEP1')").addClass("active");
+        $(".step-container .step dl:contains('STEP1')").addClass("active");
 
         // Add 'next' class to the next dl (STEP2)
-        $(".step-container .cont dl:contains('STEP2')").addClass("next");
+        $(".step-container .step dl:contains('STEP2')").addClass("next");
 
 
         // 使用 AJAX 加载 step1.html 的内容
@@ -205,53 +258,66 @@ $(document).ready(function () {
     });
 
     $(document).on('click', '#step3_next_btn', function () {
-        // Remove 'active' & 'next' class
-        $(".step-container .cont dl.active").removeClass("active");
-        $(".step-container .cont dl.next").removeClass("next");
+        var isEmpty = checkStep2FormData(inputIds);
+        if (isEmpty) {
+            // Remove 'active' & 'next' class
+            $(".step-container .step dl.active").removeClass("active");
+            $(".step-container .step dl.next").removeClass("next");
 
 
-        // Add 'active' class to the next dl (STEP3)
-        $(".step-container .cont dl:contains('STEP3')").addClass("active");
+            // Add 'active' class to the next dl (STEP3)
+            $(".step-container .step dl:contains('STEP3')").addClass("active");
 
-        // Add 'active' class to the next dl (STEP4)
-        $(".step-container .cont dl:contains('STEP4')").addClass("next");
-
-
-
-        var valuesDictionary = getValuesAndStoreInDictionary();
-        // console.log(valuesDictionary);
-
-        // 使用 AJAX 加载 step3.html 的内容
-        $.ajax({
-            url: "./step3.html", // 替换为实际的文件路径
-            type: "GET",
-            dataType: "html",
-            success: function (response) {
-                // 使用响应更新 main 标签的内容
-                $("main .container").html(response);
-
-                // 将值设置回元素
-            restoreValuesFromDictionary(valuesDictionary);
-            },
-            error: function () {
-                alert("加载内容时出错");
-            }
-        });
+            // Add 'active' class to the next dl (STEP4)
+            $(".step-container .step dl:contains('STEP4')").addClass("next");
 
 
 
+            var valuesDictionary = getValuesAndStoreInDictionary();
+            var cookieData = getCookieData();
+            // console.log(valuesDictionary);
+
+            // 使用 AJAX 加载 step3.html 的内容
+            $.ajax({
+                url: "./step3.html", // 替换为实际的文件路径
+                type: "GET",
+                dataType: "html",
+                success: function (response) {
+                    // 使用响应更新 main 标签的内容
+                    $("main .container").html(response);
+
+                    // 将值设置回元素
+                    restoreCookieData(cookieData)
+                    restoreValuesFromDictionary(valuesDictionary);
+                },
+                error: function () {
+                    alert("加载内容时出错");
+                }
+            });
+        } else {
+            alert("チェックされていない項目があります。\nすべての項目をチェックしてください。");
+            // 若有空值，增加提示文字
+            // inputIds.forEach((inputId) => {
+            //     const inputElement = document.getElementById(inputId);
+            //     const inputValue = inputElement ? inputElement.value.trim() : '';
+
+            //     if (inputValue === '') {
+            //         addErrorNotice(inputId, 'チェックしてください。');
+            //     }
+            // });
+        }
     });
 
     $(document).on('click', '#step2_back_btn', function () {
         // Remove 'active' & 'next' class
-        $(".step-container .cont dl.active").removeClass("active");
-        $(".step-container .cont dl.next").removeClass("next");
+        $(".step-container .step dl.active").removeClass("active");
+        $(".step-container .step dl.next").removeClass("next");
 
         // Add 'active' class to the previous dl (STEP2)
-        $(".step-container .cont dl:contains('STEP2')").addClass("active");
+        $(".step-container .step dl:contains('STEP2')").addClass("active");
 
         // Add 'next' class to the next dl (STEP3)
-        $(".step-container .cont dl:contains('STEP3')").addClass("next");
+        $(".step-container .step dl:contains('STEP3')").addClass("next");
 
 
         // 使用 AJAX 加载 step2.html 的内容
